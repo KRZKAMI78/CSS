@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+<body>
+<h1>
+<OL TYPE=1 Start=9>
+<LI>Jak działa styl zewnętrzny??
+</OL>
+</h1>
+<font face="arial">
+<p>
+<b>Składnia teoretyczna:</b>
+<fieldset>
+&#60;head><br>
+&nbsp;&nbsp;(...)<br>
+&nbsp;&nbsp;&#60;link rel="Stylesheet" type="text/css" href="style.css" /><br>
+&nbsp;&nbsp;(...)<br>
+&#60;/head>
+</fieldset>
+gdzie "style.css" jest zewnętrznym arkuszem stylów. Natomiast znaki (...) oznaczają inne 
+polecenia, które zwykle pojawiają się w nagłówku dokumentu, np. deklaracja strony kodowej.
+Wstawienie →wystarczy wpisać w treści nagłówkowej każdego z dokumentów (pomiędzy 
+znacznikami <head> a </head>), przedstawioną powyżej linijkę:
+<fieldset>
+&#60;link rel="Stylesheet" type="text/css" href="style.css" />
+</fieldset>
+<b>Uwagi na temat zewnętrznych CSS:</b>
+<UL TYPE=ball>
+<LI>Znacznik LINK może znajdować się tylko i wyłącznie w nagłówku dokumentu.
+(sekcja head )
+<LI>można dołączyć dowolną liczbę zewnętrznych arkuszy stylów 
+- każdy jako osobny element <link rel="Stylesheet" />. 
+<LI>W przypadku konfliktów, ważniejsze będą deklaracje z arkusza dołączonego później.
+<LI>Zewnętrzny arkusz stylów jest on zwykłym plikiem tekstowym. Do tworzenia i 
+edytowania wystarczy zwykły edytor tekst. 
+<LI>Można się posłużyć specjalnym edytorem CSS. 
+<LI>Należy jedynie pamiętać, że plik będący zewnętrznym arkuszem stylów musi mieć 
+rozszerzenie *.css
+</UL><br>
+<b>Zalety zewnętrznego arkusza styli:</b><OL TYPE=1 START=1>
+<LI>wszystkie nasze strony w obrębie całego serwisu mogą mieć pewne wspólne cechy. 
+<LI>jeśli w ostatniej chwili zdecydujemy się zmienić np. rodzaj czcionki na wszystkich 
+stronach, możemy to zrobić, modyfikując jedynie zewnętrzny arkusz stylów, bez 
+konieczności zmiany każdej strony osobno. </UL>

@@ -1,0 +1,45 @@
+<html>
+<head>
+</head>
+<body>
+<h1>
+<OL TYPE=1 Start=8>
+<LI>Jak działa styl wewnętrzny?
+</OL>
+</h1>
+<font face="arial">
+<p>
+<b>1.<br></b>
+
+Wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami  &#60;head> a 
+ &#60;/head>). Można go zastosować, gdy elementy które pragniemy poddać formatowaniu, 
+występują wielokrotnie na stronie i wszystkim chcemy nadać takie same atrybuty (inne niż 
+domyślne).
+
+<b>2.Wewnętrzny arkusz stylów składnia teoretyczna:<br></b>
+<fieldset>
+&#60;head><br>
+ &nbsp;&nbsp; &nbsp;(...)<br>
+ &nbsp;&#60;style type="text/css"><br>
+ &nbsp; /* &#60;![CDATA[ */<br>
+ &nbsp; &nbsp; selektor1 { cecha: wartość; cecha2: wartość2... }<br>
+ &nbsp; &nbsp;selektor2 { cecha: wartość; cecha2: wartość2... }<br>
+ &nbsp;&nbsp; &nbsp; (...)<br>
+ &nbsp;/* ]]> */<br>
+ &nbsp; &#60;/style><br>
+ &nbsp;&nbsp; &nbsp;(...)<br>
+&#60;/head>
+</fieldset>
+<b>3.<br></b>
+Selektorem może być praktycznie dowolny znacznik, np. p (akapit), h1 (tytuł), td (komórka 
+tabeli) i inne. To właśnie elementom, które znajdują się w kodzie źródłowym, pomiędzy tymi 
+znacznikami, nadajemy atrybuty formatowania opisane w arkuszu.<br>
+<b>4.<br></b>
+Jako "cecha" (w deklaracji stylu - powyżej) należy wpisać o jakie konkretnie atrybuty 
+formatowania nam chodzi (opisane w kolejnych rozdziałach).
+Natomiast jako wyraz "wartość" wpisujemy dokładną wartość atrybutu.
+Zwróć uwagę, że jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy 
+rozdzielone średnikami.
+</p></font>
+</body>
+</html>
